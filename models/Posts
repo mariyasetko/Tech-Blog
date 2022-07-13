@@ -21,7 +21,11 @@ Posts.init(
                 model: 'user',
                 key: 'id',
             },
-        }
+        },
+        content: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
     },
     {
         sequelize,
